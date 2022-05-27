@@ -5,7 +5,7 @@
 int main(){
 
     //Declare an array of ints
-   // int scores [10]; // Junk data
+   int scores [10]; // Junk data
 
     //Read data
 
@@ -87,7 +87,7 @@ int main(){
 
 
     //Sum up scores array, store result in sum
- 
+    /*
     int scores [] {2,5,8,2,5,6,9};
     int sum {0};
     
@@ -98,4 +98,5 @@ int main(){
   
    
     return 0;
+    */
 }
