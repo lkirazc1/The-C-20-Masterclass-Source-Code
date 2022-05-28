@@ -43,7 +43,7 @@ int main(){
 
    int scores[10] {1,2,3,4,5,6,7,8,9,10}; // Lives on the stack
 
-   std::cout << "scores size : " << std::size(scores) << std::endl;
+   std::cout << "scores size : " << sizeof(scores) / sizeof(scores[0]) << std::endl;
    for( auto s : scores){
        std::cout << "value : " << s << std::endl;
    }

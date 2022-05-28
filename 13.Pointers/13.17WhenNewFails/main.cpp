@@ -19,7 +19,7 @@ int main(){
             std::cout << "  Something went wrong : " << ex.what() << std::endl;
         }
     }
-    */
+    */    
 
 
    //std::nothrow
@@ -39,4 +39,5 @@ int main(){
     std::cout << "Program ending well" << std::endl;
     
     return 0;
+    
 }

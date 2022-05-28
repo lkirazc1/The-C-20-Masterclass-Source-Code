@@ -11,15 +11,15 @@ int main(){
 
     //Print arr0
     std::cout << "arr0 : ";
-    for (size_t i{}; i < std::size(arr0); ++i) {
+    for (size_t i{}; i < sizeof(arr0) / sizeof(int); ++i) {
         std::cout << *(p_arr0 + i) << " ";
     }
     std::cout << std::endl;
 
     //Print arr1
     std::cout << "arr1 : ";
-    for (size_t i{}; i < std::size(arr1); ++i) {
-        std::cout << *(p_arr0 + i) << " ";
+    for (size_t i{}; i < sizeof(arr1) / sizeof(int); ++i) {
+        std::cout << *(p_arr1 + i) << " ";
     }
     std::cout << std::endl;
 
@@ -58,14 +58,14 @@ int main(){
 
     //Print arr0
     std::cout << "arr0 : ";
-    for (size_t i{}; i < std::size(arr0); ++i) {
+    for (size_t i{}; i < sizeof(arr0) / sizeof(int); ++i) {
         std::cout << *(p_arr0 + i) << " ";
     }
     std::cout << std::endl;
 
     //Print arr1
     std::cout << "arr1 : ";
-    for (size_t i{}; i < std::size(arr1); ++i) {
+    for (size_t i{}; i < sizeof(arr0) / sizeof(int); ++i) {
         std::cout << *(p_arr1 + i) << " ";
     }
     std::cout << std::endl;

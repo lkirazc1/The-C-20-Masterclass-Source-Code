@@ -117,7 +117,7 @@ int main(){
     
 	std::cout << std::endl;
 	std::cout << "Printing out the array after modification of 3 first elements: " << std::endl;
-    for ( size_t i{0} ; i < std::size(scores) ; ++i){
+    for ( size_t i{0} ; i < sizeof(scores) ; ++i){
         std::cout <<"Value : "<< scores[i] << std::endl;
     }
 	
