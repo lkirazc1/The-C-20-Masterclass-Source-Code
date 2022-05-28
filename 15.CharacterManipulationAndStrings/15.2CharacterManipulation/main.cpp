@@ -1,5 +1,5 @@
 #include <iostream>
-#
+#include <stdio.h>
 
 int main(){
 
@@ -102,12 +102,12 @@ int main(){
 
     //Turning a character to lowercase using the std::tolower() function
     std::cout << std::endl;
-    std::cout << "std::tolwer and std::toupper: " << std::endl;
+    std::cout << "std::tolower and std::toupper: " << std::endl;
     char original_str[] {"Home. The feeling of belonging"};
-    char dest_str[std::size(original_str)];
+    char dest_str[sizeof(original_str) / sizeof(original_str[0])];
     
     //Turn this to uppercase. Change the array in place
-    for(size_t i{}; i < std::size(original_str) ; ++i){
+    for(size_t i{}; i < sizeof(original_str) / sizeof(original_str[0]) ; ++i){
         dest_str[i] = std::toupper(original_str[i]);
     }
     
@@ -115,7 +115,7 @@ int main(){
     std::cout << "Uppercase string : " << dest_str << std::endl;
     
     //Turn this to lowercase. Change the array in place
-    for(size_t i{}; i < std::size(original_str) ; ++i){
+    for(size_t i{}; i < sizeof(original_str) / sizeof(original_str[0]) ; ++i){
         dest_str[i] = std::tolower(original_str[i]);
     }
     

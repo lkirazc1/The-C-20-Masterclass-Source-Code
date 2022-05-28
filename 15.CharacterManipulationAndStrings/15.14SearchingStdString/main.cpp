@@ -88,7 +88,7 @@ int main(){
 	std::string string2 = "beer is packaged by her in beer cans around here.";
 	const char * c_string2{"her"};
 	
-	size_t found_pos = string2.find(c_string2,2);
+	size_t found_pos = string2.find(c_string2,22);
 	if( found_pos!= std::string::npos){
 		std::cout <<c_string2 <<  " found at position : " << found_pos << std::endl;
 	}else{

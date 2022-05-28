@@ -86,7 +86,7 @@ int main(){
    //data()
     std::string str2 { "Hello World"};
     
-    char * data = str2.data();
+    const char * data = str2.data();
     std::cout << "Wrapped c string : " << data << std::endl;
     
     data[0] = 'B';// This also changes std::string.
