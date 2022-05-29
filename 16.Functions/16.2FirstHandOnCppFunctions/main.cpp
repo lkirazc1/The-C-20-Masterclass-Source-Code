@@ -97,7 +97,7 @@ int main(){
     
     double incr_mult_result = increment_multiply(h,i);
     
-	std::cout << "Outside function , before increment : " << std::endl;
+	std::cout << "Outside function , after increment : " << std::endl;
 	std::cout << "h : " << h << std::endl;
 	std::cout << "i : " << i << std::endl;
 
