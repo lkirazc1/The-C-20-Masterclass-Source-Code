@@ -15,7 +15,7 @@ int main(){
 
     double student_scores[] {10.0,20.0,30.0,4,5,6,7,8,9}; // Less than 5 parameters
 
-    double result = sum(student_scores,std::size(student_scores));
+    double result = sum(student_scores,sizeof(student_scores) / sizeof(student_scores[0]));
     std::cout << "result : " << result << std::endl;
    
     return 0;
