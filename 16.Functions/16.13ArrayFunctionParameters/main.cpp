@@ -24,7 +24,7 @@ int main(){
     //std::cout << "sizeof(my_scores) : " << sizeof(my_scores) << std::endl;
    
 
-   double result = sum(my_scores,std::size(my_scores));
+   double result = sum(my_scores,sizeof(my_scores) / sizeof(my_scores[0]));
    std::cout << "result : " << result << std::endl;
  
     return 0;

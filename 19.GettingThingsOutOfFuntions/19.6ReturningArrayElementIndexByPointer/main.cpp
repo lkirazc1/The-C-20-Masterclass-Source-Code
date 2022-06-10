@@ -5,7 +5,7 @@ const double* find_max_address(const double scores[], size_t count);
 int main(){
 
 	double array[] {1.0,2.0,3.0,45.0,5.0,6.0,7.0,8.0,79.0,10.0};
-    const double* p_max = find_max_address(array,std::size(array));
+    const double* p_max = find_max_address(array,sizeof(array) / sizeof(array[0]));
     std::cout << "max : " << *p_max << std::endl;
     
     return 0;

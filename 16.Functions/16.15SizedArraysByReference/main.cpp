@@ -18,7 +18,7 @@ int main(){
 //Definition
 double sum( const double (&scores) [10]){
     double sum{};
-    for(size_t i{}; i < std::size(scores) ; ++i){
+    for(size_t i{}; i < sizeof(scores) / sizeof(scores[0]) ; ++i){
         sum  += scores[i];
     }
     return sum;

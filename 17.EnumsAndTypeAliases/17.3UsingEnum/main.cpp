@@ -7,7 +7,7 @@ enum class Month {
     Sep, Oct, Nov, Dec
 };
 
-std::string_view month_to_string(Month month){
+std::string month_to_string(Month month){
     switch (month)
     {
         /*
